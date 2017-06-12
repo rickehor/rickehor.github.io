@@ -1,7 +1,91 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+d>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, user-scalable=no">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://rickehor.github.io/" />
+<meta property="og:image" content="http://rickehor.github.io/preview.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="900" />
+<title>超清互動版 - 親共建制派聯署信 超過 10000 個 ID 留言：「少年，你太年輕了...」</title>
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+.strip {
+    position: absolute;
+    left: 0;
+    right: 0;
+    line-height: 22pt;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.strip a {
+    color: white;
+    background: #444;
+    text-decoration: none;
+    padding: 0 8pt;
+    display: inline-block;
+}
+.strip a:hover {
+    background: #888;
+}
+.strip a:active {
+    background: #333;
+}
+</style>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65435876-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body style="background: black">
+
+<div class="strip" style="top: 0">
+    <span>超清互動版 - 親共建制派聯署信 超過10000個ID留言：少年，你太年輕了...</span>
+</div>
+
+<div id="canvas" style="position: absolute; top: 22pt; bottom: 22pt; left: 0; right: 0"></div>
+
+<div class="strip" style="bottom: 0">
+    <a href="https://www.facebook.com/Fight.Tech.Bureau/posts/880672971980154" target="_blank">聯署原帖</a>
+    <a href="http://www.tvmost.com.hk/201507201810_article_7000comments" target="_blank">毛記電視報導</a>
+    <a href="https://www.facebook.com/FrontlineTechWorkersConcernGroup" target="_blank">前線科技人員 FB</a>
+</div>
+
 </body>
+<!-- OpenSeadragon -->
+<script src="openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id: "canvas",
+        prefixUrl: "openseadragon/images/",
+        minPixelRatio: 0.45,
+        maxZoomPixelRatio: 0.6,
+        tileSources: {
+            Image: {
+                xmlns: "http://schemas.microsoft.com/deepzoom/2008",
+                Url: "http://rickehor.github.io/tiles/",
+                Format: "jpg",
+                Overlap: "2",
+                TileSize: "512",
+                Size: {
+                    Height: "30368",
+                    Width:  "40480"
+                }
+            }
+        }
+    });
+</script>
 </html>
+
